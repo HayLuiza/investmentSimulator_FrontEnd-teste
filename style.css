@@ -1,0 +1,125 @@
+body {
+  margin: 8px 8px;
+  font-family: Arial, Helvetica, sans-serif;
+  border: #86c786 solid 2px;
+}
+
+header {
+  margin: 0;
+  background-color: rgb(93, 188, 93);
+  background-image: url(https://media.istockphoto.com/id/1423747813/pt/vetorial/modern-green-background.jpg?s=612x612&w=0&k=20&c=nIRyWEgPEtvqhfl8rYnZqsYVbrTSdpH5MKFERZ4db-k=);
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header .header-title {
+  color: #FFFF;
+  font-size: 35px;
+  text-shadow: 0 0 20px white;
+}
+
+/* PÁGINA DE SIMULAÇÃO */
+
+.simulator .formInvestment {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #afd5aa;
+  height: 76.5vh;
+}
+
+.simulator .formInvestment .formInvestment-title {
+  font-size: 40px;
+  color: rgb(95, 95, 95);
+}
+
+.simulator .formInvestment .formInvestment-inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 18px;
+  width: 300px;
+}
+
+.simulator .formInvestment .formInvestment-inputs div {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+.simulator .formInvestment .formInvestment-inputs div .formInvestment-inputs_input {
+  width: 100%;
+  height: 25px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 3px;
+  outline-color: rgb(22, 195, 183);
+}
+
+.simulator .formInvestment .formInvestment-button, .result-button {
+  margin: 30px;
+  width: 200px;
+  height: 30px;
+  background-color: #708370;
+  border-radius: 3px;
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  border: none;
+  box-shadow: -5px 5px 2px rgb(65, 186, 65);
+  cursor: pointer;
+}
+
+.simulator .formInvestment .formInvestment-button:hover {
+  background-color: #5f805f;
+}
+
+/* PÁGINA DE RESULTADO */
+
+.result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #afd5aa;
+  height: 76.5vh;
+}
+
+.result .result-text {
+  width: 80%;
+  font-size: 40px;
+  font-weight: 600;
+  color: rgb(57, 57, 57);
+  text-align: center;
+}
+
+.result .result-button {
+  width: 300px;
+  height: 40px;
+}
+
+.result .result-button:hover {
+  background-color: #5f805f;
+}
+
+/* ESCONDER PÁGINA */
+
+.invisible {
+  display: none;
+}
+
+/* CLASSE DE ERRO NO INPUT */
+
+.simulator .formInvestment .formInvestment-inputs div .inputError {
+  border: 1px solid #de5656bc;
+  border-radius: 3px;
+  padding: 0px 1px;
+}
+
+.simulator .formInvestment .formInvestment-inputs div .inputError::placeholder {
+  color: #eb3232bc;
+  font-size: 12px;
+}
